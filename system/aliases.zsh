@@ -25,23 +25,17 @@ alias cd..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # SSH Connections
 alias dhc="ssh ubuntu@208.97.140.227"
 alias yakko="ssh deanj@yakko.sd.dreamhost.com"
-alias vpsthrill="ssh thrillhause@ps158038.dreamhostps.com"
 alias tarfu="ssh deanj@tarfu.dreamhost.com"
 
-# Be nice
-alias htop='sudo htop'
-alias hosts='sudo vi /private/etc/hosts'
-
-# IP addresses
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias localip="ipconfig getifaddr en1"
-alias myip="ifconfig | grep 'inet ' | grep -v 127.0.0.1 | awk '{print \$2}'"
+# Hosts stuff
+alias hosts='sudo vi /etc/hosts'
+alias flushdns='sudo systemd-resolve --flush-caches'
+alias dnsflush='sudo systemd-resolve --flush-caches'
 
 # Copy my public key to the pasteboard
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | printf '=> Public key copied to pasteboard.\n'"
@@ -63,4 +57,3 @@ alias fs="stat -f \"%z bytes\""
 
 # Docker stuff
 alias dc="docker container"
-
