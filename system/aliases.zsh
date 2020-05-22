@@ -20,13 +20,13 @@ alias g="git"
 alias h="history"
 
 # Easier navigation: .., ..., ~ and -
-alias ~="cd ~"
 alias ..="cd .."
 alias cd..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias -- -="cd -"
+alias ~="cd ~" # `cd` is probably faster to type though
 
 # SSH Connections
 alias dhc="ssh ubuntu@208.97.140.227"
