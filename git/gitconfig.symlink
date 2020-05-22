@@ -34,3 +34,5 @@
 [user]
 	name = Dean Johnson
 	email = johnson.kennethdean@gmail.com
+[credential]
+	helper = store
