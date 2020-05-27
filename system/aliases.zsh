@@ -58,3 +58,6 @@ alias fs="stat -f \"%z bytes\""
 
 # Docker stuff
 alias dc="docker container"
+
+# Overall update, Snap, Apt, NPM
+alias sys_update='snap refresh --list; sudo apt-get update; sudo apt-get upgrade;'
